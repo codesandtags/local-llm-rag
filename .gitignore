@@ -1,0 +1,50 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*$py.class
+
+
+# -----------------------
+# Virtual Environments
+# -----------------------
+venv/
+env/
+.venv/
+ENV/
+
+# -----------------------
+# Distribution / packaging
+# -----------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+pip-wheel-metadata/
+*.manifest
+
+# -----------------------
+# Jupyter notebooks
+# -----------------------
+.ipynb_checkpoints/
+
+# -----------------------
+# pyenv
+# -----------------------
+.python-version
+
+# -----------------------
+# IDEs / Editors
+# -----------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
