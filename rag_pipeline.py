@@ -3,17 +3,18 @@ from ollama import ollama_generate
 
 def construct_prompt(chunks, user_query):
     context = "\n".join(chunks)
-    prompt = f"""You are a helpful assistant. I have some context from a PDF:
+    # prompt = f"""You are a helpful assistant. I have some context from a PDF:
+    prompt = f"""Eres un util asistente que es capaz de responder las preguntas del contenido de un PDF:
 ---
 {context}
 ---
-Given this context and the following question, provide a concise answer.
+Dado este contexto y la siguiente pregunta, proporciona una respuesta concisa.
 
-Question: {user_query}
-Answer:"""
+Pregunta: {user_query}
+Respuesta:"""
     return prompt
 
-def answer_query(user_query, model="llama2", k=3):
+def answer_query(user_query, model=None, k=3):
     # Retrieve top k relevant chunks
     relevant_chunks = retrieve_relevant_chunks(user_query, k=k)
     # Build prompt

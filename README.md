@@ -23,6 +23,7 @@ The system:
     - [Example](#example)
   - [How It Works](#how-it-works)
   - [Project structure](#project-structure)
+  - [Define environment variables](#define-environment-variables)
 
 ---
 
@@ -165,4 +166,10 @@ local-llm-rag/
 ├── ollama.py
 ├── requirements.txt
 └── README.md
+```
+
+## Define environment variables
+
+```bash
+export OLLAMA_MODEL=llama2-uncensored
 ```
