@@ -172,4 +172,5 @@ local-llm-rag/
 
 ```bash
 export OLLAMA_MODEL=llama2-uncensored
+export OLLAMA_MODEL=deepseek-r1
 ```
